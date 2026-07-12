@@ -303,18 +303,18 @@ jobs:
               APP_PATH=$(find "$DERIVED_DATA_PATH/Build/Products/${CONFIGURATION}-iphoneos" -name "*.app" -type d | head -1)
             fi
 
-            if [ -z "$APP_PATH" ]; then
-              echo "Error: Could not find .app"
-              exit 1
-            fi
-            echo "Found app at: $APP_PATH"
-            cd ..
-            mkdir -p build/Payload
-            cp -R "$APP_PATH" build/Payload/
-            cd build
-            zip -rq "$BUILD_ID.ipa" Payload
-            rm -rf Payload
-            echo "Created unsigned IPA: build/$BUILD_ID.ipa"
+          if [ -z "$APP_PATH" ]; then
+            echo "Error: Could not find .app"
+            exit 1
+          fi
+          echo "Found app at: $APP_PATH"
+          cd "$GITHUB_WORKSPACE"
+          mkdir -p build/Payload
+          cp -R "$APP_PATH" build/Payload/
+          cd build
+          zip -rq "$BUILD_ID.ipa" Payload
+          rm -rf Payload
+          echo "Created unsigned IPA: build/$BUILD_ID.ipa"
           fi
 
       - name: Upload IPA artifact
