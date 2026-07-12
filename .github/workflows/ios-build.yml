@@ -197,7 +197,7 @@ jobs:
           DERIVED_DATA_PATH="${GITHUB_WORKSPACE}/DerivedData"
 
           if [ "$PROJECT_TYPE" = "flutter" ]; then
-            FLUTTER_DIR="$(dirname "$IOS_PATH")"
+            FLUTTER_DIR="${GITHUB_WORKSPACE}/$(dirname "$IOS_PATH")"
             pushd "$FLUTTER_DIR"
             if [ "$CONFIGURATION" = "Debug" ]; then
               echo "Building Flutter iOS Debug..."
