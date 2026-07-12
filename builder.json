@@ -1,0 +1,16 @@
+{
+  "project": "lalomita_mobile",
+  "platform": "ios",
+  "github": {
+    "owner": "carvcab",
+    "repo": "lalomita-mobile"
+  },
+  "ios": {
+    "path": "mobile/ios"
+  },
+  "flutter": {
+    "watch": {}
+  },
+  "reactNative": {},
+  "mobai": {}
+}
