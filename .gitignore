@@ -1,0 +1,11 @@
+node_modules/
+dist/
+build/
+__pycache__/
+*.pyc
+*.bak
+*.bak2
+lalomita.db
+*.spec
+installer.iss
+.env

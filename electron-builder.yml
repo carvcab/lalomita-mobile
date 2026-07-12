@@ -1,0 +1,37 @@
+appId: com.variedades.lalomita
+productName: "Variedades La Lomita"
+directories:
+  output: dist
+files:
+  - electron/**/*
+  - index.html
+  - logo.png
+  - logo.ico
+  - logo_cropped.png
+  - package.json
+asar: false
+win:
+  target:
+    - portable
+    - nsis
+  icon: logo.ico
+  artifactName: "${productName}-${version}-${arch}.${ext}"
+portable:
+  artifactName: "VariedadesLaLomita-Portable.exe"
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  artifactName: "VariedadesLaLomita-Setup.exe"
+  shortcutName: "Variedades La Lomita"
+  menuCategory: true
+  installerIcon: logo.ico
+  uninstallerIcon: logo.ico
+  installerHeaderIcon: logo.ico
+  uninstallDisplayName: "Variedades La Lomita"
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  runAfterFinish: true
+  deleteAppDataOnUninstall: false
+  installerSidebar: null
+  include: null

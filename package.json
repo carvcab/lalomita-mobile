@@ -1,0 +1,19 @@
+{
+  "name": "variedades-la-lomita",
+  "version": "1.30.0",
+  "description": "Sistema de Gestion Variedades La Lomita",
+  "author": "Variedades La Lomita",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "npx electron .",
+    "dev": "npx electron . --dev",
+    "build": "npx electron-builder",
+    "build:win": "npx electron-builder --win",
+    "build:portable": "npx electron-builder --win portable",
+    "build:nsis": "npx electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "^33.4.11",
+    "electron-builder": "^25.0.0"
+  }
+}

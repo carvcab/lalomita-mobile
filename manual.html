@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Manual Rápido - Variedades La Lomita</title>
+<style>
+@page { margin: 1cm; size: letter; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 14px; line-height: 1.4; color: #222; padding: 20px; max-width: 1000px; margin: 0 auto; }
+.header { text-align: center; padding-bottom: 12px; border-bottom: 3px solid #1a73e8; margin-bottom: 16px; }
+.header h1 { font-size: 22px; color: #1a73e8; }
+.header p { font-size: 13px; color: #666; margin-top: 4px; }
+.steps { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.step { background: #f8f9fa; border-left: 4px solid #1a73e8; border-radius: 8px; padding: 12px 14px; break-inside: avoid; }
+.step .num { display: inline-block; background: #1a73e8; color: #fff; font-weight: 700; font-size: 12px; width: 22px; height: 22px; border-radius: 50%; text-align: center; line-height: 22px; margin-right: 8px; }
+.step h3 { display: inline; font-size: 14px; }
+.step p { font-size: 12.5px; color: #444; margin-top: 6px; padding-left: 30px; }
+.step .tip { font-size: 11px; color: #1a73e8; margin-top: 4px; padding-left: 30px; font-style: italic; }
+.tips { margin-top: 16px; background: #fffde7; border: 1px solid #f9ab00; border-radius: 8px; padding: 12px 14px; }
+.tips h3 { font-size: 13px; color: #e8a800; margin-bottom: 6px; }
+.tips ul { padding-left: 20px; font-size: 12px; color: #555; }
+.tips ul li { margin-bottom: 3px; }
+.credits { font-size: 10px; color: #aaa; text-align: center; margin-top: 16px; padding-top: 10px; border-top: 1px solid #ddd; }
+@media print { body { padding: 0; } .step { break-inside: avoid; } }
+@media (max-width: 600px) { .steps { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🏪 Variedades La Lomita — Manual Rápido</h1>
+  <p>5 pasos para el día a día | Versión 1.0</p>
+</div>
+
+<div class="steps">
+
+  <div class="step">
+    <span class="num">1</span><h3>Registrar una Venta</h3>
+    <p>Ve a <strong>Ventas (POS)</strong> → Toca los productos que vende → Aparecen en el carrito de la derecha.</p>
+    <p>Si se equivoca de cantidad, toque <strong>− o +</strong> para corregir.</p>
+    <div class="tip">💡 Si el producto no aparece, primero debe tener precio en <strong>Prod. x Proveedor</strong>.</div>
+  </div>
+
+  <div class="step">
+    <span class="num">2</span><h3>Cobrar la Venta</h3>
+    <p>Revise el <strong>total</strong> en el carrito. Seleccione <strong>método de pago</strong> (Efectivo / Tarjeta / Transferencia / Crédito).</p>
+    <p>Presione <strong>Cobrar</strong> → Aparece el ticket. Puede imprimirlo o cerrarlo.</p>
+    <div class="tip">💡 Si es Crédito/Fiado, anote el nombre del cliente en Notas.</div>
+  </div>
+
+  <div class="step">
+    <span class="num">3</span><h3>Registrar Gastos</h3>
+    <p><strong>Compras/Facturas</strong> → Para mercancía que compra. Aumenta el inventario automáticamente.</p>
+    <p><strong>Salidas Efectivo</strong> → Para dinero que saca de caja (pan, pasajes, servicios, gastos personales).</p>
+    <p><strong>Consumos</strong> → Para productos que usa el negocio (comida, café, utensilios). No afecta la caja.</p>
+    <div class="tip">💡 Registre TODO el mismo día para que el sistema refleje la realidad.</div>
+  </div>
+
+  <div class="step">
+    <span class="num">4</span><h3>Ajustar Inventario</h3>
+    <p>Si un producto se <strong>daña, pierde o sobra</strong>, use el botón <strong>Ajustar Stock</strong> en el POS.</p>
+    <p>Ingrese cantidad negativa si falta (−1, −2) o positiva si sobra. Escriba el motivo.</p>
+    <div class="tip">💡 Ejemplo: "Se rompió un frasco de mayonesa" → Ajuste de −1 unidad.</div>
+  </div>
+
+  <div class="step">
+    <span class="num">5</span><h3>Cerrar la Caja</h3>
+    <p>Al final del día: <strong>Cierre de Caja</strong> → Ponga la fecha de hoy. Revise las ventas y salidas registradas.</p>
+    <p>Cuente el efectivo real y escríbalo en <strong>Efectivo Real en Caja</strong>. Si hay diferencia de más de $5, explique por qué en las notas.</p>
+    <p>Presione <strong>Cerrar Día</strong> → Luego distribuya el dinero en las categorías (Sueldo, Arriendo, etc.).</p>
+    <div class="tip">💡 Si la diferencia es grande ($10+) revísenlo juntos. No importa si se equivoca, lo importante es registrar.</div>
+  </div>
+
+</div>
+
+<div class="tips">
+  <h3>⚠️ Reglas de Oro</h3>
+  <ul>
+    <li><strong>Registre el mismo día.</strong> Si lo deja para mañana, se olvida.</li>
+    <li><strong>Toda salida de efectivo</strong> debe tener un motivo escrito (pan, pasaje, etc.).</li>
+    <li><strong>No borre ventas</strong> a menos que sea un error real. Si se equivocó, anótelo en las notas del cierre.</li>
+    <li><strong>Haga backup</strong> cada noche. El sistema lo hará automático si configuró una carpeta.</li>
+    <li><strong>Si algo falla:</strong> No se preocupe, llame a Diego. Los datos están seguros en backup.</li>
+  </ul>
+</div>
+
+<div class="credits">
+  <strong>Variedades La Lomita</strong> — www.lalomita.com — Hecho por Diego
+</div>
+
+</body>
+</html>
